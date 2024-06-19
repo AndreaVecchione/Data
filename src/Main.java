@@ -6,8 +6,9 @@ import java.time.format.FormatStyle;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        //inserisco la data 
         OffsetDateTime date = OffsetDateTime.parse("2002-03-01t13:00:00Z");
-
+//modifico la lunghezza della data inserita
         String dateShort = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
         System.out.println("grandezza piccola: " + dateShort);
 
